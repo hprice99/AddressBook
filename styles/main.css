@@ -1,0 +1,83 @@
+<style type="text/css">
+		
+		h1 {
+			color: #33b5e5;
+			font-family: roboto, helvetica, tohoma, arial, sans-serif
+			font-size: 1.0em;
+		}
+		
+		
+		body {
+			background-color: grey;
+			color: #33b5e5;
+			font-family: roboto, helvetica, tahoma, arial, sans-serif;
+			font-size: 0.8em;
+		}
+		
+		.mandatory {
+			color: red;
+			font-size: 2.0em;
+		}
+		
+		#friendForm {
+			position: relative;
+			border: solid 1px #000000;
+			background-color: black;
+			width: 80%;
+			min-width: 650px; 
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border-radius: 10px;
+			background: rgba(255,255,255,0.85);
+		}
+		
+		#friendsPanel {
+			position: relative;
+			border: solid 1px #000000;
+			background-color: black;
+			width: 80%;
+			min-width: 650px; 
+			min-height: 240px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 10px;
+			padding-right: 10px;
+			border-radius: 10px;
+			overflow: hidden;
+			background: rgba(255,255,255,0.85);
+		}
+		
+		#addressBookHeader img {
+			position: relative;
+			width: 640px;
+			height: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		
+		input {
+			width: 250px;
+			font-family: roboto,helvetica, tohoma, arial, sans-serif;
+		}
+		
+		textarea {
+			width: 250px;
+			resize: none;
+		}
+		
+		.tag {
+			text-align: right;
+			font-family: roboto,helvetica, tohoma, arial, sans-serif;
+		}
+		
+		.address {
+			text-align: left;
+			font-family: roboto,helvetica, tohoma, arial, sans-serif;
+		}
+		
+		</style>

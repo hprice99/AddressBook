@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>Address Book</title>
+		
+		<meta name="description" contents="This is a personal address book for the user.">
+		<script src="javascript/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<!-- JQuery Source -->
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script src="javascript/datepicker.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="/resources/demos/style.css">
+	</head>
+	
+	<body background="images/background.jpg">
+	
+	
+	
+		<div id="addressBookHeader">
+			<h1><img border="0" src="images/addressBookHeader.png" width="640" height="200"></h1>
+		</div>
+		
+		<div id="friendForm">
+		
+		<h2>Add a friend</h2>
+			<!-- The new friends form -->
+			<form action="index.html" method="post" onsubmit="return addFriend(this);">
+			<table>
+			<tr><td class="tag"><b>Name:</b></td> <td><input type="text" name="name" placeholder="Your Friend's Name"> <span class="mandatory">*</span> <br> </td></tr>
+			<tr><td class="tag"><b>Male:</b></td> <td><input type="radio" name="gender" value="Male" checked></td></tr> 
+			<tr><td class="tag"><b>Female:</b></td> <td><input type="radio" name="gender" value="Female"> </td></tr> 
+			<tr><td class="tag"><b>Birthday:</b></td><br> <td><input type="text" id="datepicker" placeholder="MM/DD/YYYY"></td></tr>	
+				<tr><td class="tag"><b>Email:</b></td> <td> <input type="text" name="eMail" placeholder="Your Friend's Email Address"> <span class="mandatory">*</span> </td></tr>
+				<tr><td class="tag"><b>Phone:</b></td> <td> <input type="text" name="phone" placeholder="Your Friend's Phone Number"> <span class="mandatory">*</span> </td></tr>
+				<tr><td class="tag"><b>School:</b></td> <td> <input type="text" name="school" placeholder="Your Friend's School"></td></tr> 
+				<tr><td class="tag" valign="top"><b>Address:</b></td> <td> <input type="text" name="street" placeholder="Street Name"> </td></tr>
+				<tr><td></td><td> <input type="text" name="suburb" placeholder="Suburb"></td> <td>
+				<select name="state">
+				<option value=""> </option>
+				<option value="ACT">ACT</option>
+				<option value="NSW">NSW</option>
+				<option value="NT">NT</option>
+				<option value="QLD">QLD</option>
+				<option value="SA">SA</option>
+				<option value="TAS">TAS</option>
+				<option value="VIC">VIC</option>
+				<option value="WA">WA</option>
+				</select>
+				</tr>
+				</td>
+				
+				<tr><td></td><td><input type="submit" value="Add Friend" style="width: 150px;"> </tr></td>
+			</table>
+			</form>
+		</div>
+		
+	
+		<div id="friendsPanel">
+			<h2>My Friends</h2>
+		</div>
+	</body>
+</html>
+
